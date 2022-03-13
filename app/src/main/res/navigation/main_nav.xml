@@ -3,34 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/usersFragment">
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.dizdarevic.apt.ui.fragments.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_usersFragment5"
-            app:destination="@id/usersFragment"
-            app:popUpTo="@id/usersFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
-    <fragment
-        android:id="@+id/usersFragment"
-        android:name="com.dizdarevic.apt.ui.fragments.UsersFragment"
-        android:label="users_fragment"
-        tools:layout="@layout/fragment_users"
-        app:startDestination="@id/action_usersFragment_to_loginFragment3">
-        <action
-            android:id="@+id/action_usersFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
-        <action
-            android:id="@+id/action_usersFragment_to_loginFragment3"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.dizdarevic.apt.ui.fragments.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        android:id="@+id/mainFragment"
+        android:name="com.dizdarevic.weatherapp.ui.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 </navigation>
